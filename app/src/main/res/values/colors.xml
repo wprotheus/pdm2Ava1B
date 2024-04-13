@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cp_secundaria">#42A5F5</color>
+    <color name="cp_primaria">#3949AB</color>
+    <color name="cp_primaria_variante">#1A237E</color>
+    <color name="cs_secundaria">#4DB6AC</color>
+    <color name="cs_secundaria_variante">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backGroundApp">#C8E6C9</color>
+    <color name="texto_azul">#0D47A1</color>
+    <color name="texto_verde">#1B5E20</color>
+    <color name="texto_vermelho">#B71C1C</color>
+    <color name="texto_verde_esc">#021B17</color>
+    <color name="texto_laranja">#992907</color>
+    <color name="texto_azul_esc">#1A237E</color>
+    <color name="bac_logo">#151936</color>
+</resources>

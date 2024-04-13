@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.wprotheus.wellingtonbatistaparreiraneto.ui.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_nav_inicio_to_nav_elementos"
+            app:destination="@id/nav_elementos"
+            app:popUpTo="@id/nav_inicio"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_inicio_self"
+            app:destination="@id/nav_inicio"
+            app:popUpTo="@id/nav_inicio"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_inicio_pop"
+            app:popUpTo="@id/nav_inicio"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_elementos"
+        android:name="com.wprotheus.wellingtonbatistaparreiraneto.ui.ElementosFragment"
+        android:label="@string/menu_elementos"
+        tools:layout="@layout/fragment_elementos" >
+        <action
+            android:id="@+id/action_nav_elementos_to_nav_separacao"
+            app:destination="@id/nav_separacao"
+            app:popUpTo="@id/nav_inicio"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_elementos_pop"
+            app:popUpTo="@id/nav_elementos"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_separacao"
+        android:name="com.wprotheus.wellingtonbatistaparreiraneto.ui.SeparacaoFragment"
+        android:label="@string/menu_separacao"
+        tools:layout="@layout/fragment_separacao" >
+        <action
+            android:id="@+id/action_nav_separacao_to_nav_finalizacao"
+            app:destination="@id/nav_finalizacao"
+            app:popUpTo="@id/nav_inicio"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_separacao_pop"
+            app:popUpTo="@id/nav_separacao"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_finalizacao"
+        android:name="com.wprotheus.wellingtonbatistaparreiraneto.ui.FinalizacaoFragment"
+        android:label="@string/menu_finalizacao"
+        tools:layout="@layout/fragment_finalizacao" >
+        <action
+            android:id="@+id/action_nav_finalizacao_to_nav_Camera"
+            app:destination="@id/nav_Camera"
+            app:popUpTo="@id/nav_inicio"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_finalizacao_pop"
+            app:popUpTo="@id/nav_finalizacao"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Camera"
+        android:name="com.wprotheus.wellingtonbatistaparreiraneto.ui.CameraFragment"
+        android:label="@string/fab_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_nav_Camera_to_nav_mvMapa"
+            app:destination="@id/nav_mvMapa"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_inicio"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_Camera_pop"
+            app:popUpTo="@id/nav_Camera"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_mvMapa"
+        android:name="com.wprotheus.wellingtonbatistaparreiraneto.ui.MapaFragment"
+        android:label="@string/menu_mapa"
+        tools:layout="@layout/fragment_mapa">
+
+        <action
+            android:id="@+id/action_nav_mvMapa_to_nav_inicio"
+            app:destination="@id/nav_inicio"
+            app:popUpTo="@id/nav_inicio"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_mvMapa_pop"
+            app:popUpTo="@id/nav_inicio"
+            app:popUpToInclusive="true"
+            app:destination="@id/mobile_navigation" />
+    </fragment>
+
+</navigation>

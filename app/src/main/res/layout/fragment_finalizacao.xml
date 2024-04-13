@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGroundApp"
+    tools:context=".ui.FinalizacaoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lavFinish"
+            android:layout_width="251dp"
+            android:layout_height="185dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/borda_layout_verde"
+            app:layout_constraintBottom_toTopOf="@+id/divider5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/tvUserNome"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="37dp"
+            android:text="@string/nome_user_info"
+            android:textAlignment="center"
+            android:textColor="@color/texto_azul"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/tvImpar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvNomeUser"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/tvQtdImpar"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/borda_layout_verde"
+            android:text="@string/qtd_impar"
+            android:textAlignment="center"
+            android:textColor="@color/texto_vermelho"
+            android:textSize="17sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            app:layout_constraintEnd_toEndOf="@+id/tvImpar"
+            app:layout_constraintTop_toBottomOf="@+id/tvImpar" />
+
+        <TextView
+            android:id="@+id/tvImpar"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="@string/nr_impar"
+            android:textAlignment="center"
+            android:textColor="@color/texto_vermelho"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvQtdImpar"
+            app:layout_constraintEnd_toEndOf="@+id/tvUserNome"
+            app:layout_constraintTop_toBottomOf="@+id/tvUserNome" />
+
+        <TextView
+            android:id="@+id/tvNomeUser"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/user_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvPares"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/tvPares"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="@string/nr_par"
+            android:textAlignment="center"
+            android:textColor="@color/texto_verde"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvQtdPar"
+            app:layout_constraintStart_toStartOf="@+id/tvNomeUser"
+            app:layout_constraintTop_toBottomOf="@+id/tvNomeUser" />
+
+        <TextView
+            android:id="@+id/tvQtdPar"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/borda_layout_verde"
+            android:text="@string/qtd_par"
+            android:textAlignment="center"
+            android:textColor="@color/texto_verde"
+            android:textSize="17sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            app:layout_constraintStart_toStartOf="@+id/tvPares"
+            app:layout_constraintTop_toBottomOf="@+id/tvPares" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="8dp"
+            android:background="#80CBC4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:background="#90CAF9"
+            app:layout_constraintBottom_toTopOf="@+id/lavFinish"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#90CAF9"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2"
+            app:layout_constraintVertical_bias="0.38" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="#80CBC4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

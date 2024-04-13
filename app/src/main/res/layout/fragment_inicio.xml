@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InicioFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lvDadosIniciais"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backGroundApp"
+        android:orientation="vertical"
+        android:padding="2dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <ImageView
+            android:id="@+id/ivPedra"
+            android:layout_width="80dp"
+            android:layout_height="107dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/borda_layout_verde"
+            app:layout_constraintEnd_toStartOf="@+id/tvPedras"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/stones" />
+
+        <TextView
+            android:id="@+id/tvPedras"
+            android:layout_width="80dp"
+            android:layout_height="107dp"
+            android:background="@drawable/borda_layout"
+            android:padding="2dp"
+            android:text="@string/nome_pedra"
+            android:textColor="@color/texto_verde_esc"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toStartOf="@+id/ivNumero"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivPedra"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/ivNumero"
+            android:layout_width="80dp"
+            android:layout_height="107dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/borda_layout_verde"
+            android:padding="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvNumeros"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvPedras"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/numbers" />
+
+        <TextView
+            android:id="@+id/tvNumeros"
+            android:layout_width="80dp"
+            android:layout_height="107dp"
+            android:background="@drawable/borda_layout"
+            android:padding="2dp"
+            android:text="@string/valor_numero"
+            android:textColor="@color/texto_laranja"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivNumero"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivCombinacao"
+            android:layout_width="0dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivNumero"
+            app:srcCompat="@android:drawable/button_onoff_indicator_on" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="0dp"
+            android:layout_height="152dp"
+            android:layout_marginTop="2dp"
+            android:autoSizeTextType="uniform"
+            android:background="@drawable/borda_layout"
+            android:padding="2dp"
+            android:textColor="#EF6C00"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivCombinacao" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

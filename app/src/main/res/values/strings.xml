@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">WellingtonBatistaParreiraNeto</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">PDM2 - Avaliação 1B</string>
+    <string name="nav_header_subtitle">wellington.neto@estudante.ifto.edu.br</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_mapa">Mapa</string>
+    <string name="fab_camera">Câmera</string>
+
+    <string name="desc_mapa">Mapa com um marcador apontando para\na Praça dos Girassóis, em Palmas-TO</string>
+    <string name="menu_inicio">Início</string>
+    <string name="menu_elementos">Elementos</string>
+    <string name="menu_separacao">Separação</string>
+    <string name="menu_finalizacao">Finalização</string>
+    <string name="nome_pedra">Nomes pedras</string>
+    <string name="valor_numero">Valor números</string>
+    <string name="nome_user">Digite seu nome:</string>
+    <string name="valor_repeticao">Digite um valor:</string>
+    <string name="texto_orientacao">Os valores devem ser entre 1 e 40\nSomente valores inteiro</string>
+    <string name="valores_repeticao">0123456789</string>
+    <string name="btn_gerar">EXECUTAR</string>
+    <string name="btn_sistema">SISTEMA</string>
+    <string name="valor_pedra"><![CDATA[Diamante + 80\nEsmeralda + 40\nAmetista + 20\nSelenita + 10]]></string>
+    <string name="res_valor">Valores...</string>
+    <string name="valor_original">Valores originais...</string>
+    <string name="valor_original_pedra">Valores originais</string>
+    <string name="valor_somado">Valores somados</string>
+    <string name="user_name">Nome: </string>
+    <string name="nome_user_info">Nome do usuário</string>
+    <string name="nr_par">Números pares</string>
+    <string name="nr_impar">Números ímpares</string>
+    <string name="qtd_par">Quantidade PAR</string>
+    <string name="qtd_impar">Quantidade ÍMPAR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fab_cam_desc">Inicia a câmera</string>
+    <string name="dados_baixados">Dados baixados e prontos para uso</string>
+    <string name="problema_end">URL inválida ou erro ao obter os dados</string>
+    <string name="msg_permissao">Para continuar é necessária permissão adequada</string>
+    <string name="valor_non">O nome deve ser preenchido.</string>
+    <string name="orientacao">O valor deve ser preenchdo e deve estar entre 1 e 40</string>
+    <string name="coord_geo">"Coordenadas Geográficas: "</string>
+    <string name="lattde">"Latitude: "</string>
+    <string name="lgtde">" Longitude: "</string>
+    <string name="prc_gira">Praça dos Girassóis - Monumento à Bíblia - Centro Geodésico do Brasil</string>
+
+
+</resources>

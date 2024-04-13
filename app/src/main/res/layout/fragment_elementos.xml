@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ElementosFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/consDadosElementos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@color/backGroundApp"
+        android:orientation="vertical"
+        android:padding="2dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp">
+
+
+        <ListView
+            android:id="@+id/lvDadosElementos"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivCombinacao" />
+
+        <ImageView
+            android:id="@+id/ivCombinacao"
+            android:layout_width="0dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/backGroundApp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnGerar"
+            app:srcCompat="@android:drawable/button_onoff_indicator_on" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNome"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nome_user"
+                android:keyboardNavigationCluster="false"
+                android:maxLength="30"
+                android:textColor="@color/texto_verde_esc"
+                app:textInputLayoutFocusedRectEnabled="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilValor"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilNome">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="@string/valores_repeticao"
+                android:hint="@string/valor_repeticao"
+                android:inputType="number|numberDecimal"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:textColor="@color/texto_verde_esc" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvOrientacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/texto_orientacao"
+            android:textAlignment="center"
+            android:textColor="@color/texto_azul"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilValor" />
+
+        <Button
+            android:id="@+id/btnGerar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/cs_secundaria_variante"
+            android:padding="7dp"
+            android:text="@string/btn_gerar"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOrientacao" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
