@@ -132,14 +132,14 @@ public class MainActivity extends AppCompatActivity
         service.execute(() -> {
             try {
                 Stone tempo = new DataSetJSON().baixarJSON();
-                if (tempo != null)
+                if (tempo != null) {
                     sharedDadosViewModel.getmLiveOriginal().postValue(tempo);
-                handler.post(() -> {
-                    Toast.makeText(getApplicationContext(), R.string.dados_baixados, Toast.LENGTH_SHORT).show();
-                });
+                    handler.post(() -> Toast.makeText(getApplicationContext(), R.string.dados_baixados, Toast.LENGTH_SHORT).show());
+                }
+                else
+                    handler.post(() -> Toast.makeText(getApplicationContext(), R.string.problema_end, Toast.LENGTH_LONG).show());
             } catch (Exception e) {
                 e.printStackTrace();
-                handler.post(() -> Toast.makeText(getApplicationContext(), R.string.problema_end, Toast.LENGTH_LONG).show());
             }
         });
     }
